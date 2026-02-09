@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react'
 import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Construction,  FilePenLine, Hammer } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
@@ -140,18 +140,19 @@ export default function HeroSection() {
 
                                 <ul className="mt-4 flex flex-col items-center md:mt-10 mt-5 gap-3 text-sm text-muted-foreground sm:flex-row sm:gap-6">
                                     <li className="flex items-center gap-2">
-                                        <Image src="/tick.svg" alt="" width={18} height={18} className="size-4 text-accent" />
-                                        <TextEffect per="line" preset="fade-in-blur" speedSegment={0.3} delay={0.5} as="span">Built for growing laundry businesses</TextEffect>
+                                        <Construction className="size-4 text-black dark:text-white" />
+                                        <TextEffect per="line" preset="fade-in-blur" speedSegment={0.3} delay={0.5} as="span">Marock Construction Enterprise</TextEffect>
                                        
                                     </li>
-                                    <li className="flex items-center gap-2 ">
-                                        <Image src="/tick.svg" alt="" width={18} height={18} className="size-4 text-accent" />
-                                        <TextEffect per="line" preset="fade-in-blur" speedSegment={0.3} delay={0.5} as="span">No credit card required</TextEffect>
+                                      <li className="flex items-center gap-2">
+                                        <FilePenLine className="size-4 text-black dark:text-white" />
+                                        <TextEffect per="line" preset="fade-in-blur" speedSegment={0.3} delay={0.5} as="span">CAC Registered •
+3492332</TextEffect>
                                        
                                     </li>
-                                    <li className="flex items-center gap-2">
-                                        <Image src="/tick.svg" alt="" width={18} height={18} className="size-4 text-accent" />
-                                        <TextEffect per="line" preset="fade-in-blur" speedSegment={0.3} delay={0.5} as="span">Launch in minutes</TextEffect>
+                                     <li className="flex items-center gap-2">
+                                        <Hammer className="size-4 text-black dark:text-white" />
+                                        <TextEffect per="line" preset="fade-in-blur" speedSegment={0.3} delay={0.5} as="span">Led by Engr. Marshal Uzor</TextEffect>
                                     </li>
                                 </ul>
                             </div>
@@ -197,7 +198,7 @@ export default function HeroSection() {
                                 className="block text-sm duration-150 hover:opacity-75">
                                 <span> Meet Our Customers</span>
 
-                                <ChevronRight className="ml-1 inline-block size-3" />
+                                <ChevronRight className="ml-1 inline-block size-3 text-muted-foreground dark:text-muted-foreground" />
                             </Link>
                         </div>
                         <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
