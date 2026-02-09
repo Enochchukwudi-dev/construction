@@ -3,16 +3,24 @@ import Image from 'next/image'
 
 export const Logo = ({ className, uniColor }: { className?: string; uniColor?: boolean }) => {
     return (
-        <div className={cn('inline-flex flex-col items-center h-auto w-auto bg-black rounded px-2 py-1', className)}>
+        <div className={cn('inline-flex flex-col items-center h-auto w-auto bg-transparent dark:bg-black rounded px-2 py-1', className)}>
             <Image
-                src="/tre.png"
-                alt="Marock Building" 
+                src="/trewhite.png"
+                alt="Marock Building"
                 width={160}
                 height={24}
-                className="h-6 w-auto block"
+                className="h-6 w-auto block dark:hidden"
                 priority
             />
-            <span className="mt-1 text-center text-xs sm:text-sm text-white leading-none">
+            <Image
+                src="/tre.png"
+                alt="Marock Building (dark)"
+                width={160}
+                height={24}
+                className="h-6 w-auto hidden dark:block"
+                priority
+            />
+            <span className="mt-1 text-center text-xs sm:text-sm text-foreground dark:text-white leading-none">
                 <span className="font-semibold block">MAROCK BUILDING CONST.</span>
                 <span className="block text-[10px] sm:text-xs font-extralight text-blue-300">ENTERPRISE</span>
             </span>

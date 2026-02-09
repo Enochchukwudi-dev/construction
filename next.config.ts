@@ -16,14 +16,20 @@ const nextConfig: NextConfig = {
   // Dev-only: ignore editor temp/backups and noisy files to prevent auto reloads when using webpack
   webpack: (config: any, { dev }: { dev: boolean }) => {
     if (dev) {
+      // fastest dev mapping
+      config.devtool = 'eval';
       config.watchOptions = {
         ignored: [
           "**/.git/**",
           "**/node_modules/**",
           "**/.vscode/**",
+          "**/.idea/**",
+          "**/dist/**",
+          "**/public/**",
           "**/*.tmp",
           "**/*.swp",
-          "**/globals copy.css"
+          "**/globals copy.css",
+          "**/.next/**"
         ]
       };
     }

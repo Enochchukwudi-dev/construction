@@ -140,8 +140,8 @@ export default function HeroSection() {
 
                                 <ul className="mt-4 flex flex-col items-center md:mt-10 mt-5 gap-3 text-sm text-muted-foreground sm:flex-row sm:gap-6">
                                     <li className="flex items-center gap-2">
-                                        <Construction className="size-4 text-black dark:text-white" />
-                                        <TextEffect per="line" preset="fade-in-blur" speedSegment={0.3} delay={0.5} as="span">Marock Construction Enterprise</TextEffect>
+                                        <Construction className="size-4  text-black dark:text-white" />
+                                        <TextEffect per="line" preset="fade-in-blur"  speedSegment={0.3} delay={0.5} as="span">Marock Construction Enterprise</TextEffect>
                                        
                                     </li>
                                       <li className="flex items-center gap-2">
